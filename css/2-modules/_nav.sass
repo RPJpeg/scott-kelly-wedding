@@ -1,0 +1,111 @@
+header
+  height: 100px
+  border-bottom: 1px solid $light-grey
+  z-index: 5000
+  @include bp-medium
+    position: fixed
+    left: 0
+    top: 0
+    height: 85px
+    background-color: white
+    width: 100%
+    border-bottom: 0
+  @include bp-small
+    height: 70px
+  h1
+    color: $dark-grey
+    padding: 24px
+    @include bp-medium
+      padding: 20px 50px
+    @include bp-small
+      padding: 15px 20px
+
+  nav
+    width: 60%
+    height: 100%
+    float: right
+    @include bp-medium
+      width: 55%
+    ul
+      height: 50%
+      float: right
+      @include bp-xlarge
+        padding-top: 45px
+      @include bp-large
+        padding-top: 48px
+      @include bp-medium
+        display: none
+      @include bp-small
+        display: none
+
+      li
+        display: inline
+        color: $dark-grey
+        padding: 10px
+        &:hover
+          color: $light-red
+        &:active
+          color: $dark-red
+        @include bp-xlarge
+          @include font-size(20px)
+        @include bp-large
+          @include font-size(16px)
+          padding: 8px
+        @include bp-medium
+          @include font-size(18px)
+        @include bp-small
+          @include font-size(18px)
+
+  .mobile-nav
+    width: 45px
+    height: 45px
+    background-image: url(../images/menu.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: fixed
+    top: 20px
+    right: 50px
+    z-index: 1000
+    display: none
+    cursor: pointer
+    &:hover
+      opacity: .85
+    &:active
+      background-image: url(../images/menu-active.png)
+    @include bp-small
+      right: 25px
+      top: 15px
+      width: 40px
+      height: 40px
+      display: block
+    @include bp-medium
+      display: block
+  .mobile-menu
+    background-color: $off-white
+    color: $dark-grey
+    position: fixed
+    right: 48px
+    top: 90px
+    z-index: 1001
+    display: none
+    @include bp-medium
+      top: 70px
+    @include bp-small
+      width: 100%
+      right: 0
+      top: 70px
+    li
+      text-align: right
+      list-style: none
+      padding: 18px
+      letter-spacing: 1px
+      background-color: $off-white
+      @include font-size(20px)
+      color: $light-red
+      border-bottom: 1px solid $light-grey
+      &:hover
+        color: $dark-red
+        background-color: #F8F8F8
+      @include bp-small
+        text-align: center

@@ -1,0 +1,29 @@
+.photos
+  @include clearfix
+  p
+    color: $off-white
+  .photo-container
+    padding: 1.8vw
+    flex-flow: row wrap
+    display: flex
+    .photo-box
+      background-color: $off-black
+      flex: auto
+      width: 150px
+      height: auto
+      margin: 1.8vw
+      overflow: hidden
+
+      img
+        width: 100%
+        height: auto
+        transform: scale(1.1)
+        @include transition(.2s)
+        &:hover
+          transform: scale(1.2)
+          opacity: 0.5
+
+
+  .mobile-hide
+    @include bp-small
+      display: none

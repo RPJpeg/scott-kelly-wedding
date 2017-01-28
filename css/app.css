@@ -1,0 +1,557 @@
+*, html, body, p, h1, h2, h3, h4, h5, h6, a, li, ul, div {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+  a:active {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
+
+.wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; }
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      width: 100%; } }
+
+@media only screen and (max-width: 1000px) {
+  .wrapper-header {
+    width: 100%; } }
+
+.float-right {
+  float: right; }
+  .float-right:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.float-left {
+  float: left; }
+
+.outer-box {
+  padding: 25px; }
+
+.inner-box {
+  width: 100%;
+  height: 100%; }
+
+*, html, body, p, h2, h3, h4, h5, h6, a, li, ul, div {
+  font-family: "Lora", serif;
+  font-weight: 400; }
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px;
+  font-size: 48px;
+  font-size: 3rem; }
+  @media only screen and (max-width: 1000px) {
+    h1 {
+      font-size: 42px;
+      font-size: 2.625rem; } }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 36px;
+      font-size: 2.25rem; } }
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem; }
+
+h3 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+h4 {
+  font-size: 28px;
+  font-size: 1.75rem; }
+
+h5 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+p {
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+header {
+  height: 100px;
+  border-bottom: 1px solid #D0D0D0;
+  z-index: 5000; }
+  @media only screen and (max-width: 1000px) {
+    header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 85px;
+      background-color: white;
+      width: 100%;
+      border-bottom: 0; } }
+  @media only screen and (max-width: 600px) {
+    header {
+      height: 70px; } }
+  header h1 {
+    color: #A0A0A0;
+    padding: 24px; }
+    @media only screen and (max-width: 1000px) {
+      header h1 {
+        padding: 20px 50px; } }
+    @media only screen and (max-width: 600px) {
+      header h1 {
+        padding: 15px 20px; } }
+  header nav {
+    width: 60%;
+    height: 100%;
+    float: right; }
+    @media only screen and (max-width: 1000px) {
+      header nav {
+        width: 55%; } }
+    header nav ul {
+      height: 50%;
+      float: right; }
+      @media only screen and (min-width: 1401px) {
+        header nav ul {
+          padding-top: 45px; } }
+      @media only screen and (max-width: 1400px) {
+        header nav ul {
+          padding-top: 48px; } }
+      @media only screen and (max-width: 1000px) {
+        header nav ul {
+          display: none; } }
+      @media only screen and (max-width: 600px) {
+        header nav ul {
+          display: none; } }
+      header nav ul li {
+        display: inline;
+        color: #A0A0A0;
+        padding: 10px; }
+        header nav ul li:hover {
+          color: #E86666; }
+        header nav ul li:active {
+          color: #BF5454; }
+        @media only screen and (min-width: 1401px) {
+          header nav ul li {
+            font-size: 20px;
+            font-size: 1.25rem; } }
+        @media only screen and (max-width: 1400px) {
+          header nav ul li {
+            font-size: 16px;
+            font-size: 1rem;
+            padding: 8px; } }
+        @media only screen and (max-width: 1000px) {
+          header nav ul li {
+            font-size: 18px;
+            font-size: 1.125rem; } }
+        @media only screen and (max-width: 600px) {
+          header nav ul li {
+            font-size: 18px;
+            font-size: 1.125rem; } }
+  header .mobile-nav {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 1000;
+    display: none;
+    cursor: pointer; }
+    header .mobile-nav:hover {
+      opacity: 0.85; }
+    header .mobile-nav:active {
+      background-image: url(../images/menu-active.png); }
+    @media only screen and (max-width: 600px) {
+      header .mobile-nav {
+        right: 25px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
+        display: block; } }
+    @media only screen and (max-width: 1000px) {
+      header .mobile-nav {
+        display: block; } }
+  header .mobile-menu {
+    background-color: #fefefe;
+    color: #A0A0A0;
+    position: fixed;
+    right: 48px;
+    top: 90px;
+    z-index: 1001;
+    display: none; }
+    @media only screen and (max-width: 1000px) {
+      header .mobile-menu {
+        top: 70px; } }
+    @media only screen and (max-width: 600px) {
+      header .mobile-menu {
+        width: 100%;
+        right: 0;
+        top: 70px; } }
+    header .mobile-menu li {
+      text-align: right;
+      list-style: none;
+      padding: 18px;
+      letter-spacing: 1px;
+      background-color: #fefefe;
+      font-size: 20px;
+      font-size: 1.25rem;
+      color: #E86666;
+      border-bottom: 1px solid #D0D0D0; }
+      header .mobile-menu li:hover {
+        color: #BF5454;
+        background-color: #F8F8F8; }
+      @media only screen and (max-width: 600px) {
+        header .mobile-menu li {
+          text-align: center; } }
+
+main {
+  background-image: url(../images/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 1000px) {
+    main {
+      height: 600px; } }
+  @media only screen and (max-width: 600px) {
+    main {
+      height: 500px;
+      background-position: left center; } }
+  main h1 {
+    color: #fefefe;
+    text-shadow: 3px 3px 3px #202020; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+@media only screen and (max-width: 1000px) {
+  .mobile-hide {
+    display: none; } }
+
+.couple {
+  background-color: #D0D0D0;
+  background-image: url(../images/split.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 600px) {
+    .couple {
+      background-position: left; } }
+  .couple h1 {
+    color: #fefefe;
+    text-shadow: 2px 2px 2px #202020; }
+
+.couple-box {
+  width: 100%; }
+  .couple-box:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .couple-box p {
+    text-align: center;
+    padding: 0 56px;
+    color: #A0A0A0;
+    line-height: 1.5; }
+    @media only screen and (max-width: 1000px) {
+      .couple-box p {
+        padding: 0 36px;
+        margin-top: 40px; } }
+    @media only screen and (max-width: 600px) {
+      .couple-box p {
+        padding: 0 14px;
+        margin-top: 40px; } }
+  .couple-box img {
+    width: 200px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px; }
+  .couple-box .scott-box {
+    width: 50%;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    float: left; }
+    @media only screen and (max-width: 1000px) {
+      .couple-box .scott-box {
+        width: 100%;
+        float: none; } }
+    @media only screen and (max-width: 600px) {
+      .couple-box .scott-box {
+        width: 100%;
+        float: none; } }
+  .couple-box .kelly-box {
+    width: 50%;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    float: right;
+    margin-bottom: 80px; }
+    .couple-box .kelly-box:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media only screen and (max-width: 1000px) {
+      .couple-box .kelly-box {
+        width: 100%;
+        float: none; } }
+    @media only screen and (max-width: 600px) {
+      .couple-box .kelly-box {
+        width: 100%;
+        float: none; } }
+
+.photos:after {
+  content: "";
+  display: table;
+  clear: both; }
+.photos p {
+  color: #fefefe; }
+.photos .photo-container {
+  padding: 1.8vw;
+  flex-flow: row wrap;
+  display: flex; }
+  .photos .photo-container .photo-box {
+    background-color: #202020;
+    flex: auto;
+    width: 150px;
+    height: auto;
+    margin: 1.8vw;
+    overflow: hidden; }
+    .photos .photo-container .photo-box img {
+      width: 100%;
+      height: auto;
+      transform: scale(1.1);
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .photos .photo-container .photo-box img:hover {
+        transform: scale(1.2);
+        opacity: 0.5; }
+@media only screen and (max-width: 600px) {
+  .photos .mobile-hide {
+    display: none; } }
+
+.bridesmaids {
+  background-color: #E86666;
+  height: 600px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .bridesmaids p {
+    color: #fefefe; }
+
+.groomsmen {
+  background-color: #6B88FF;
+  height: 600px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .groomsmen p {
+    color: #fefefe; }
+
+.info {
+  height: 640px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  border: 1px #D0D0D0 solid;
+  background-color: #F8F8F8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  @media only screen and (max-width: 1000px) {
+    .info {
+      margin-bottom: 100px; } }
+  .info h3 {
+    color: #BF5454;
+    padding-left: 4px;
+    font-size: 18px;
+    font-size: 1.125rem; }
+  .info p {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding: 5px;
+    color: #202020; }
+  .info .left-info {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    float: left; }
+    @media only screen and (max-width: 1000px) {
+      .info .left-info {
+        width: 100%;
+        height: 100%;
+        float: none; }
+        .info .left-info p, .info .left-info h3 {
+          text-align: center; } }
+    .info .left-info .left-top-info {
+      width: 100%;
+      height: 40%; }
+      @media only screen and (max-width: 1000px) {
+        .info .left-info .left-top-info {
+          height: 35%; } }
+      .info .left-info .left-top-info .left-top-info-text-one {
+        width: 50%;
+        height: 100%;
+        float: left; }
+      .info .left-info .left-top-info .left-top-info-text-two {
+        width: 50%;
+        height: 100%;
+        float: right; }
+        .info .left-info .left-top-info .left-top-info-text-two:after {
+          content: "";
+          display: table;
+          clear: both; }
+    .info .left-info .left-bottom-info {
+      width: 100%;
+      height: 60%; }
+      @media only screen and (max-width: 1000px) {
+        .info .left-info .left-bottom-info {
+          height: 65%; } }
+      .info .left-info .left-bottom-info iframe {
+        width: 100%;
+        height: 100%; }
+  .info .right-info {
+    width: 50%;
+    height: 100%;
+    float: right; }
+    .info .right-info:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media only screen and (max-width: 1000px) {
+      .info .right-info {
+        display: none; } }
+  .info .baseball-bg {
+    background-image: url(../images/phillies.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .info .light-bg {
+    background-color: #fefefe;
+    border: 1px solid #D0D0D0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+
+.registries {
+  height: 400px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .registries {
+      height: 850px; } }
+  .registries h1 {
+    color: #A0A0A0;
+    text-align: center;
+    padding-bottom: 80px; }
+    @media only screen and (max-width: 600px) {
+      .registries h1 {
+        padding-bottom: 0; } }
+  .registries .registry-col1, .registries .registry-col2, .registries .registry-col3 {
+    width: 33%;
+    height: 100%;
+    padding: 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 600px) {
+      .registries .registry-col1, .registries .registry-col2, .registries .registry-col3 {
+        float: none;
+        width: 100%; }
+        .registries .registry-col1:after, .registries .registry-col2:after, .registries .registry-col3:after {
+          content: "";
+          display: table;
+          clear: both; } }
+    .registries .registry-col1 img, .registries .registry-col2 img, .registries .registry-col3 img {
+      opacity: 0.8;
+      width: 150px; }
+      .registries .registry-col1 img:hover, .registries .registry-col2 img:hover, .registries .registry-col3 img:hover {
+        transform: translate(2px, 2px);
+        opacity: 1; }
+      @media only screen and (max-width: 600px) {
+        .registries .registry-col1 img, .registries .registry-col2 img, .registries .registry-col3 img {
+          margin-top: 50px; } }
+
+.footer-hero {
+  background-color: #D0D0D0;
+  background-image: url(../images/thank-you.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer {
+  height: 72px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #fefefe;
+  border-top: 1px solid #D0D0D0; }
+  @media only screen and (max-width: 1000px) {
+    footer {
+      height: 82px;
+      position: relative; } }
+  @media only screen and (max-width: 1000px) {
+    footer .rpjpeg-mobile {
+      margin-right: 30px;
+      margin-top: 30px; } }
+  footer a {
+    color: #A0A0A0; }
+    footer a:hover {
+      color: #E86666; }
+    footer a:active {
+      color: #BF5454; }
+  footer p {
+    color: #A0A0A0;
+    font-size: 14px;
+    font-size: 0.875rem;
+    margin: 26px 0 0;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 1000px) {
+      footer p {
+        font-size: 12px;
+        font-size: 0.75rem;
+        margin: 14px 6px;
+        text-align: center; } }
+  footer span {
+    color: #E86666; }
+    footer span:hover {
+      color: #BF5454; }
+
+/*# sourceMappingURL=app.css.map */

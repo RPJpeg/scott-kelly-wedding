@@ -1,0 +1,68 @@
+@mixin clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+// example
+// .box
+//   @include clearfix
+
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+// .box
+      @include border-radius(10px)
+
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+@mixin font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+// example
+// p
+//   @include font-size(14px)
+
+@mixin transition($duration)
+  -webkit-transition: $duration
+  -moz-transition: $duration
+  -ms-transition: $duration
+  -o-transition: $duration
+  transition: $duration
+
+// a
+//   @include transition(.2s)
+//   &:hover
+//     color: blue
+
+@mixin bp-xlarge
+  @media only screen and (min-width: 1401px)
+    @content
+
+@mixin bp-large
+  @media only screen and (max-width: 1400px)
+    @content
+
+@mixin bp-medium
+  @media only screen and (max-width: 1000px)
+    @content
+
+@mixin bp-small
+  @media only screen and (max-width: 600px)
+    @content
+
+// example
+// .sidebar
+//   width: 60%
+//   float: left
+//   margin: 0 2% 0 0
+//   @include bp-small
+//     width: 100%
+//     float: none
+//     margin: 0

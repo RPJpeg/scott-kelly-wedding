@@ -1,0 +1,71 @@
+.info
+  height: 640px
+  margin-top: 100px
+  margin-bottom: 100px
+  padding: 20px
+  border: 1px $light-grey solid
+  background-color: #F8F8F8
+  @include border-radius(5px)
+  @include bp-medium
+    margin-bottom: 100px
+  h3, p
+    // text-align: center
+  h3
+    color: $dark-red
+    padding-left: 4px
+    @include font-size(18px)
+  p
+    @include font-size(12px)
+    padding: 5px
+    color: $off-black
+  .left-info
+    width: 50%
+    height: 100%
+    padding: 10px
+    float: left
+    @include bp-medium
+      width: 100%
+      height: 100%
+      float: none
+      p, h3
+        text-align: center
+    .left-top-info
+      width: 100%
+      height: 40%
+      @include bp-medium
+        height: 35%
+      .left-top-info-text-one
+        width: 50%
+        height: 100%
+        float: left
+      .left-top-info-text-two
+        width: 50%
+        height: 100%
+        float: right
+        @include clearfix
+    .left-bottom-info
+      width: 100%
+      height: 60%
+      @include bp-medium
+        height: 65%
+      iframe
+        width: 100%
+        height: 100%
+  .right-info
+    width: 50%
+    height: 100%
+    float: right
+    @include clearfix
+    @include bp-medium
+      display: none
+
+  .baseball-bg
+    background-image: url(../images/phillies.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+  .light-bg
+    background-color: $off-white
+    border: 1px solid $light-grey
+    @include border-radius(5px)
