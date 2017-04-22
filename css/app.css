@@ -69,12 +69,12 @@ h3 {
   font-size: 1.75rem; }
 
 h4 {
-  font-size: 28px;
-  font-size: 1.75rem; }
-
-h5 {
   font-size: 24px;
   font-size: 1.5rem; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 p {
   font-size: 14px;
@@ -153,8 +153,8 @@ header {
             font-size: 18px;
             font-size: 1.125rem; } }
   header .mobile-nav {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background-image: url(../images/menu.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -171,10 +171,10 @@ header {
       background-image: url(../images/menu-active.png); }
     @media only screen and (max-width: 600px) {
       header .mobile-nav {
-        right: 25px;
-        top: 15px;
-        width: 40px;
-        height: 40px;
+        right: 15px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
         display: block; } }
     @media only screen and (max-width: 1000px) {
       header .mobile-nav {
@@ -333,7 +333,7 @@ main {
   flex-flow: row wrap;
   display: flex; }
   .photos .photo-container .photo-box {
-    background-color: #202020;
+    background-color: #fefefe;
     flex: auto;
     width: 150px;
     height: auto;
@@ -350,7 +350,7 @@ main {
       transition: 0.2s; }
       .photos .photo-container .photo-box img:hover {
         transform: scale(1.2);
-        opacity: 0.5; }
+        opacity: 0.75; }
 @media only screen and (max-width: 600px) {
   .photos .mobile-hide {
     display: none; } }
@@ -374,6 +374,66 @@ main {
   justify-content: center; }
   .groomsmen p {
     color: #fefefe; }
+
+.bridal-party {
+  margin-top: 50px; }
+  .bridal-party:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media only screen and (max-width: 600px) {
+    .bridal-party {
+      background-position: left; } }
+  .bridal-party h1, .bridal-party h2, .bridal-party h3, .bridal-party h4, .bridal-party h5, .bridal-party p {
+    color: #A0A0A0;
+    text-align: center; }
+  .bridal-party h1 {
+    margin-bottom: 40px; }
+  .bridal-party h4 {
+    border-bottom: 1px dotted #E86666;
+    padding-bottom: 25px;
+    width: 50%; }
+  .bridal-party li {
+    text-align: left;
+    color: #A0A0A0;
+    list-style: none;
+    padding-top: 12px; }
+  .bridal-party .quarter-box {
+    width: 25%;
+    padding: 20px;
+    margin: 0;
+    text-align: center; }
+    @media only screen and (max-width: 1000px) {
+      .bridal-party .quarter-box {
+        width: 100%;
+        float: none; } }
+    @media only screen and (max-width: 600px) {
+      .bridal-party .quarter-box {
+        width: 100%;
+        float: none; } }
+  .bridal-party .photo-container {
+    padding: 1vw;
+    flex-flow: row wrap;
+    display: flex; }
+    .bridal-party .photo-container .photo-box {
+      background-color: #fefefe;
+      flex: auto;
+      width: 150px;
+      height: 150px;
+      margin: 1.8vw;
+      overflow: hidden; }
+      .bridal-party .photo-container .photo-box img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.1);
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s; }
+        .bridal-party .photo-container .photo-box img:hover {
+          transform: scale(1.2);
+          opacity: 0.75; }
 
 .info {
   height: 640px;
@@ -399,6 +459,10 @@ main {
     font-size: 0.75rem;
     padding: 5px;
     color: #202020; }
+    @media only screen and (max-width: 600px) {
+      .info p {
+        font-size: 10px;
+        font-size: 0.625rem; } }
   .info .left-info {
     width: 50%;
     height: 100%;

@@ -1,0 +1,51 @@
+.bridal-party
+  @include clearfix
+  margin-top: 50px
+  @include bp-small
+    background-position: left
+  h1, h2, h3, h4, h5, p
+    color: $dark-grey
+    text-align: center
+  h1
+    margin-bottom: 40px
+  h4
+    border-bottom: 1px dotted $light-red
+    padding-bottom: 25px
+    width: 50%
+
+  li
+    text-align: left
+    color: $dark-grey
+    list-style: none
+    padding-top: 12px
+  .quarter-box
+    width: 25%
+    padding: 20px
+    margin: 0
+    text-align: center
+    @include bp-medium
+      width: 100%
+      float: none
+    @include bp-small
+      width: 100%
+      float: none
+  .photo-container
+    padding: 1vw
+    flex-flow: row wrap
+    display: flex
+    .photo-box
+      background-color: $off-white
+      flex: auto
+      width: 150px
+      height: 150px
+      margin: 1.8vw
+      overflow: hidden
+
+      img
+        width: 100%
+        height: auto
+        transform: scale(1.1)
+        @include transition(.2s)
+        &:hover
+          transform: scale(1.2)
+          opacity: 0.75
