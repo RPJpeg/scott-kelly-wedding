@@ -388,7 +388,7 @@ main {
     color: #A0A0A0;
     text-align: center; }
   .bridal-party h1 {
-    margin-bottom: 40px; }
+    margin-bottom: 30px; }
   .bridal-party h4 {
     border-bottom: 1px dotted #E86666;
     padding-bottom: 25px;
@@ -414,13 +414,16 @@ main {
   .bridal-party .photo-container {
     padding: 1vw;
     flex-flow: row wrap;
-    display: flex; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto; }
     .bridal-party .photo-container .photo-box {
       background-color: #fefefe;
-      flex: auto;
-      width: 150px;
-      height: 150px;
-      margin: 1.8vw;
+      width: 130px;
+      height: 130px;
+      margin: 12px;
       overflow: hidden; }
       .bridal-party .photo-container .photo-box img {
         width: 100%;
