@@ -461,11 +461,35 @@ main {
     font-size: 12px;
     font-size: 0.75rem;
     padding: 5px;
-    color: #202020; }
+    line-height: 1.2;
+    color: #A0A0A0; }
     @media only screen and (max-width: 600px) {
       .info p {
         font-size: 10px;
         font-size: 0.625rem; } }
+  .info button {
+    padding: 6px;
+    margin-left: 5px;
+    border: 1px solid #BF5454;
+    background-color: #fefefe;
+    color: #BF5454;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
+    .info button:hover {
+      border: 1px solid #E86666;
+      color: #E86666; }
+    @media only screen and (max-width: 1000px) {
+      .info button {
+        margin: 0 auto;
+        display: block; } }
   .info .left-info {
     width: 50%;
     height: 100%;

@@ -8,8 +8,6 @@
   @include border-radius(5px)
   @include bp-medium
     margin-bottom: 100px
-  h3, p
-    // text-align: center
   h3
     color: $dark-red
     padding-left: 4px
@@ -17,9 +15,25 @@
   p
     @include font-size(12px)
     padding: 5px
-    color: $off-black
+    line-height: 1.2
+    color: $dark-grey
     @include bp-small
       @include font-size(10px)
+  button
+    padding: 6px
+    margin-left: 5px
+    border: 1px solid $dark-red
+    background-color: $off-white
+    color: $dark-red
+    cursor: pointer
+    @include border-radius(3px)
+    @include transition(.1s)
+    &:hover
+      border: 1px solid $light-red
+      color: $light-red
+    @include bp-medium
+      margin: 0 auto
+      display: block
   .left-info
     width: 50%
     height: 100%
