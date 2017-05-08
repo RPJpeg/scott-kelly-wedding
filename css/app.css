@@ -461,7 +461,8 @@ main {
     font-size: 12px;
     font-size: 0.75rem;
     padding: 5px;
-    line-height: 1.2;
+    line-height: 1.4;
+    letter-spacing: 0.75px;
     color: #A0A0A0; }
     @media only screen and (max-width: 600px) {
       .info p {
