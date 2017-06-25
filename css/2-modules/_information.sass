@@ -1,13 +1,12 @@
 .info
   height: 640px
   margin-top: 100px
-  margin-bottom: 100px
+  margin-bottom: 10px
   padding: 20px
   border: 1px $light-grey solid
   background-color: #F8F8F8
   @include border-radius(5px)
-  @include bp-medium
-    margin-bottom: 100px
+
   h3
     color: $dark-red
     padding-left: 4px
@@ -46,6 +45,7 @@
       float: none
       p, h3
         text-align: center
+        line-height: 1.2
     .left-top-info
       width: 100%
       height: 40%
@@ -68,10 +68,15 @@
       iframe
         width: 100%
         height: 100%
+        @include bp-medium
+          height: 90%
   .right-info
     width: 50%
     height: 100%
     float: right
+    display: flex
+    align-items: center
+    justify-content: center
     @include clearfix
     @include bp-medium
       display: none
@@ -86,3 +91,18 @@
     background-color: $off-white
     border: 1px solid $light-grey
     @include border-radius(5px)
+
+  .shuttle-saver
+    visibility: hidden
+    @include bp-medium
+      visibility: visible
+
+  .shuttle
+    background-color: rgba(0,0,0,0.8)
+    @include border-radius(10px)
+    width: 350px
+    height: auto
+    padding: 15px
+    p
+      color: $light-grey
+      @include font-size(11px)
