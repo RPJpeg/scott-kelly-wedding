@@ -448,6 +448,9 @@ main {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px; }
+  @media only screen and (max-width: 600px) {
+    .info {
+      height: 700px; } }
   .info h3 {
     color: #BF5454;
     padding-left: 4px;
@@ -530,6 +533,9 @@ main {
         @media only screen and (max-width: 1000px) {
           .info .left-info .left-bottom-info iframe {
             height: 90%; } }
+        @media only screen and (max-width: 600px) {
+          .info .left-info .left-bottom-info iframe {
+            height: 85%; } }
   .info .right-info {
     width: 50%;
     height: 100%;

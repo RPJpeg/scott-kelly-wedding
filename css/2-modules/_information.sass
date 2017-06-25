@@ -6,6 +6,8 @@
   border: 1px $light-grey solid
   background-color: #F8F8F8
   @include border-radius(5px)
+  @include bp-small
+    height: 700px
 
   h3
     color: $dark-red
@@ -70,6 +72,8 @@
         height: 100%
         @include bp-medium
           height: 90%
+        @include bp-small
+          height: 85%
   .right-info
     width: 50%
     height: 100%
