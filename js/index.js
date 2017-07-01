@@ -9,6 +9,22 @@ $(document).ready(function() {
 
 });
 
+$("#clickCouple").click(function() {
+  $('#mobileMenu').hide();
+});
+
+$("#clickPhotos").click(function() {
+  $('#mobileMenu').hide();
+});
+
+$("#clickBridal").click(function() {
+  $('#mobileMenu').hide();
+});
+
+$("#clickInfo").click(function() {
+  $('#mobileMenu').hide();
+});
+
 $("#andrewc").click(function(e) {
   $("#overlay").fadeTo(300,1)
   $("#andrewc-modal").fadeTo(300,1)

@@ -477,6 +477,9 @@ main {
     -moz-border-radius: 250px;
     -ms-border-radius: 250px;
     border-radius: 250px; }
+    @media only screen and (max-width: 600px) {
+      .modal img {
+        width: 150px; } }
   .modal ul {
     margin: 0 auto;
     text-align: center; }
@@ -487,6 +490,10 @@ main {
     .modal li strong {
       font-weight: 600;
       color: #5066BF; }
+    @media only screen and (max-width: 600px) {
+      .modal li {
+        font-size: 11px;
+        font-size: 0.6875rem; } }
   .modal button {
     padding: 6px;
     margin-top: 20px;
@@ -526,6 +533,10 @@ main {
     padding-left: 4px;
     font-size: 18px;
     font-size: 1.125rem; }
+    @media only screen and (max-width: 600px) {
+      .info h3 {
+        font-size: 14px;
+        font-size: 0.875rem; } }
   .info p {
     font-size: 12px;
     font-size: 0.75rem;

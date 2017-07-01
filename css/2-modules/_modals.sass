@@ -30,6 +30,8 @@
     width: 250px
     height: auto
     @include border-radius(250px)
+    @include bp-small
+      width: 150px
 
   ul
     margin: 0 auto
@@ -42,6 +44,8 @@
     strong
       font-weight: 600
       color: $dark-blue
+    @include bp-small
+      @include font-size(11px)
   button
     padding: 6px
     margin-top: 20px
