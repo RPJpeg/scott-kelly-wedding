@@ -1,0 +1,56 @@
+.darken
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0,0,0,.6)
+  z-index: 999
+
+.modal
+  width: 750px
+  background-color: $off-white
+  padding: 30px
+  position: fixed
+  left: 50%
+  top: 20%
+  transform: translateX(-375px)
+  z-index: 1000
+  @include bp-small
+    width: 100%
+    top: 10%
+    left: 0
+    transform: translateX(0)
+
+  .center
+    text-align: center
+    margin-bottom: 25px
+
+  img
+    width: 250px
+    height: auto
+    @include border-radius(250px)
+
+  ul
+    margin: 0 auto
+    text-align: center
+
+  li
+    list-style: none
+    margin-bottom: 4px
+    color: $off-black
+    strong
+      font-weight: 600
+      color: $dark-blue
+  button
+    padding: 6px
+    margin-top: 20px
+    border: 1px solid $dark-red
+    background-color: $off-white
+    color: $dark-red
+    cursor: pointer
+    @include border-radius(3px)
+    @include transition(.1s)
+    &:hover
+      border: 1px solid $light-red
+      color: $light-red
