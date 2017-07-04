@@ -453,12 +453,12 @@ main {
   z-index: 999; }
 
 .modal {
-  width: 750px;
+  width: 800px;
   background-color: #fefefe;
   padding: 30px;
   position: fixed;
   left: 50%;
-  top: 20%;
+  top: 5vh;
   transform: translateX(-375px);
   z-index: 1000; }
   @media only screen and (max-width: 600px) {
@@ -471,22 +471,23 @@ main {
     text-align: center;
     margin-bottom: 25px; }
   .modal img {
-    width: 250px;
+    width: 25vh;
+    max-width: 200px;
+    min-width: 100px;
     height: auto;
     -webkit-border-radius: 250px;
     -moz-border-radius: 250px;
     -ms-border-radius: 250px;
     border-radius: 250px; }
-    @media only screen and (max-width: 600px) {
-      .modal img {
-        width: 150px; } }
   .modal ul {
     margin: 0 auto;
     text-align: center; }
   .modal li {
     list-style: none;
     margin-bottom: 4px;
-    color: #202020; }
+    color: #202020;
+    font-size: 13px;
+    font-size: 0.8125rem; }
     .modal li strong {
       font-weight: 600;
       color: #5066BF; }
@@ -515,7 +516,7 @@ main {
       color: #E86666; }
 
 .info {
-  height: 640px;
+  height: 750px;
   margin-top: 100px;
   margin-bottom: 10px;
   padding: 20px;
@@ -527,7 +528,7 @@ main {
   border-radius: 5px; }
   @media only screen and (max-width: 600px) {
     .info {
-      height: 700px; } }
+      height: 900px; } }
   .info h3 {
     color: #BF5454;
     padding-left: 4px;
@@ -589,7 +590,7 @@ main {
       height: 40%; }
       @media only screen and (max-width: 1000px) {
         .info .left-info .left-top-info {
-          height: 35%; } }
+          height: 34%; } }
       .info .left-info .left-top-info .left-top-info-text-one {
         width: 50%;
         height: 100%;
